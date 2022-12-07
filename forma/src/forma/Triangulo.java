@@ -19,8 +19,8 @@ public class Triangulo extends Forma {
 	
 	public double getPerimetroAlt() {
 		// Foi considerado o perímetro de um triângulo retângulo com o ângulo reto fora da base.
-		if(base == 2 * altura) return base * (1 + Math.sqrt(2));
-		else return getPerimetro();
+		double anguloAlt = Math.asin(2 * altura/base)/2;
+		return base + altura/Math.sin(anguloAlt) + Math.sqrt(Math.pow(altura / Math.tan(anguloAlt) - base, 2) + altura * altura);
 	}
 	
 	public double getPerimetroAlt2() {
