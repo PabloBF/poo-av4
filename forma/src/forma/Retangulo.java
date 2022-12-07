@@ -28,6 +28,6 @@ public class Retangulo extends Forma implements Redimensionavel {
 
 	@Override
 	public String toString() {
-		return "Retângulo (área: " + getArea() + " u.a.; perimetro: " + getPerimetro() + " u.";
+		return "Retângulo (área: " + getArea() + " u.a.; perimetro: " + getPerimetro() + " u.)";
 	}
 }
